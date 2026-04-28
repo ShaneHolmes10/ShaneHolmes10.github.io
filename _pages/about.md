@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Boston, MA | shaneholmes2010@gmail.com
+subtitle: >
+  <a href='https://fulbright.ca/programs/killam-fellowships/'>Fulbright Killam Fellow</a> &nbsp;·&nbsp; <a href='https://hkn.ieee.org/'>IEEE Member (ΗΚΝ)</a> &nbsp;·&nbsp; Boston, MA
 
 profile:
   align: right
@@ -25,4 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Need to figure out what I'm putting in here
+I'm a Computer Engineer completing my Master's in Computer Science at Northeastern University, with a background in embedded systems, robotics, and software development. I like building things from first principles — whether that's low-level firmware for UAVs, computer vision pipelines for surgical robots, or a 3D rendering engine written entirely in C++ without a GPU.
+
+My work spans a range of disciplines: I've developed LiDAR mapping systems, built autonomous robot fleets, and taken on commissioned hardware projects like a fully articulated robotic hand. I was a Fulbright Canada Killam Fellow, which took me to the University of Toronto for an academic exchange focused on expanding that range further.
+
+I tend to gravitate toward problems that sit at the intersection of hardware and software — where the constraints are real and the solutions have to actually work.
