@@ -138,6 +138,9 @@ ul.task-list input[type="checkbox"] {
   .card {
     img {
       width: 100%;
+      // Uniform thumbnail height — remove these two lines to revert
+      height: 200px;
+      object-fit: cover;
     }
   }
 
