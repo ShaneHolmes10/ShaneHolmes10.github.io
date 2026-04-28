@@ -33,7 +33,13 @@ The result was a full-stack robotics demonstration — mechanical design, embedd
 
 ## See It In Action
 
-{% include video.liquid path="https://www.youtube.com/embed/uCIiBNb3MNI" class="img-fluid rounded z-depth-1" %}
+<iframe
+  src="https://www.youtube.com/embed/uCIiBNb3MNI"
+  class="w-100 rounded z-depth-1"
+  style="aspect-ratio: 16/9; border: none;"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 
 ---
 

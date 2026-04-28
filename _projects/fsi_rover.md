@@ -37,7 +37,13 @@ The final system achieved:
 
 ## See It In Action
 
-{% include video.liquid path="https://www.youtube.com/embed/waXdsutvG5M" class="img-fluid rounded z-depth-1" %}
+<iframe
+  src="https://www.youtube.com/embed/waXdsutvG5M"
+  class="w-100 rounded z-depth-1"
+  style="aspect-ratio: 16/9; border: none;"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>
 
 ---
 
