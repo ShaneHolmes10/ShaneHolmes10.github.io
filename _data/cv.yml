@@ -104,6 +104,26 @@ cv:
           - Scene graph with hierarchical parent-child entity system and automatic world matrix propagation
           - "Technologies: C++, CMake, Eigen, SFML, CppUnitLite"
 
+      - name: Latent Explorer
+        url: /projects/latent_explorer/
+        start_date: 2026-04
+        summary: End-to-end tool for training and interactively visualizing the latent space of image datasets in the browser.
+        highlights:
+          - Trained a convolutional decoder on ~202k face images with PCA post-processing to surface principal axes of variation
+          - Exported model to ONNX and built a pure-JavaScript browser interface running inference with no backend
+          - "Technologies: PyTorch, ONNX Runtime Web, scikit-learn, HDF5, Vanilla JS"
+
+
+    Relevant Coursework:
+      - label: Mathematics
+        details: Probability and Statistics, Differential Equations, Linear Algebra, Discrete Mathematics, Analytical Geometry and Calculus (1, 2, 3)
+      - label: Computer Engineering
+        details: Physics (1, 2), Computer Architecture and Organization, Microcomputers, Digital Logic Design, Circuits (1, 2), Digital Electronics, Computer Systems
+      - label: Software Engineering
+        details: Operating Systems Concepts, Data structures and Algorithms, Object Oriented Programming, Computer Programming, Computer Networks, Secure Software engineering, Programming Design Paradigms, Database Systems, Foundations in Software Engineering
+      - label: Robotics Systems
+        details: Autonomous Robotic Systems, Digital Signal Processing, Systems and Signals, Kinematics and control of Robotic Systems, Artificial Intelligence (1, 2), Machine Learning (1, 2), Computer Vision
+
     Awards:
       - title: Fulbright Canada Killam Fellowship
         date: 2022
