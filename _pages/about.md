@@ -26,8 +26,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a Computer Engineer completing my Master's in Computer Science at Northeastern University, with a background in embedded systems, robotics, and software development. I like building things from first principles — whether that's low-level firmware for UAVs, computer vision pipelines for surgical robots, or a 3D rendering engine written entirely in C++ without a GPU.
+
+
+Hi, I'm Shane I'm an engineer with a bachelors in Computer Engineering and a masters in Computer Science. I have a very wide breadth of interests mainly electrical, computer, mechanical, robotic, and software. 
 
 My work spans a range of disciplines: I've developed LiDAR mapping systems, built autonomous robot fleets, and taken on commissioned hardware projects like a fully articulated robotic hand. I was a Fulbright Canada Killam Fellow, which took me to the University of Toronto for an academic exchange focused on expanding that range further.
 
-I tend to gravitate toward problems that sit at the intersection of hardware and software — where the constraints are real and the solutions have to actually work.
+I tend to gravitate toward problems that are interdisciplinary mainly because I enjoy working on novel problems. This gives me the opportunity to learn new things and I find such challenged entertaining.
