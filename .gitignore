@@ -1,3 +1,11 @@
+# Media files (too large for git)
+*.MOV
+*.mov
+*.HEIC
+*.heic
+*.mp4
+*.MP4
+
 _site
 .bundle
 .DS_store
