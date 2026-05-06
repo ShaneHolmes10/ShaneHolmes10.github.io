@@ -55,31 +55,6 @@ ninja.data = [{
           description: "CPU Software Rasterizer built from first principles in C++",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3d_renderer/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "projects-mock-rover",
           title: 'Mock Rover',
           description: "FSI Capstone Project — NASA Space Grant Consortium",
@@ -95,6 +70,11 @@ ninja.data = [{
           description: "Unsupervised Latent Space Visualizer — PyTorch training pipeline with interactive browser-based inference",
           section: "Projects",handler: () => {
               window.location.href = "/projects/latent_explorer/";
+            },},{id: "projects-motor-babbling",
+          title: 'Motor Babbling',
+          description: "Teaching a simulated robot arm to reach arbitrary targets through reinforcement learning",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/motor_babbling/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
