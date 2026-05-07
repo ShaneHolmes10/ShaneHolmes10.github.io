@@ -113,6 +113,15 @@ cv:
           - Exported model to ONNX and built a pure-JavaScript browser interface running inference with no backend
           - "Technologies: PyTorch, ONNX Runtime Web, scikit-learn, HDF5, Vanilla JS"
 
+      - name: Motor Babbling — RL for Inverse Kinematics
+        url: /projects/motor_babbling/
+        start_date: 2025-01
+        end_date: 2025-04
+        summary: Implemented DQN, DDPG, and SAC from scratch to teach a simulated planar robot arm to reach arbitrary targets in MuJoCo — no analytical IK solver.
+        highlights:
+          - Compared value-based (DQN), deterministic actor-critic (DDPG), and stochastic actor-critic (SAC) against the same environment; SAC achieved ~80% success at 10cm threshold on 2-DOF random targets
+          - Built the MuJoCo environment from scratch with a configurable number of links and a shared BaseAgent interface for clean algorithm comparison
+          - "Technologies: Python, PyTorch, MuJoCo, Gymnasium, NumPy, Matplotlib"
 
     Relevant Coursework:
       - label: Mathematics
