@@ -553,6 +553,20 @@ Our most active contributors are welcome to join the maintainers team. If you ar
   </picture>
 </a>
 
+## Generating the CV PDF
+
+To regenerate `assets/pdf/cv.pdf` from `_data/cv.yml`:
+
+```bash
+python3 build_cv.py _data/cv.yml --output assets/pdf/cv.pdf
+```
+
+Requires `rendercv[full]` and `pypdf`:
+
+```bash
+pip install "rendercv[full]" pypdf
+```
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/main/LICENSE).
