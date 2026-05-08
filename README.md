@@ -287,6 +287,7 @@ Run the test yourself: [Google Lighthouse PageSpeed Insights](https://pagespeed.
     - [Maintainers](#maintainers)
     - [All Contributors](#all-contributors)
   - [Star History](#star-history)
+  - [Generating the CV PDF](#generating-the-cv-pdf)
   - [License](#license)
 
 <!--te-->
