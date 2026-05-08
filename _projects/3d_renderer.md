@@ -20,11 +20,11 @@ The full source is available on [GitHub](https://github.com/ShaneHolmes10/3DRend
 
 <div class="row justify-content-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/revolving-polyhedra.gif" title="Revolving polyhedra rendered entirely on CPU" class="img-fluid rounded z-depth-1" %}
+        {% include video.liquid path="assets/video/3DRender_demo_video.mp4" class="img-fluid rounded z-depth-1" controls=false autoplay=true loop=true muted=true %}
     </div>
 </div>
 <div class="caption">
-    Revolving polyhedra rendered entirely on the CPU — no GPU or graphics API involved.
+    The video above shows a demo, where the camera is being moved around using the WASD keys. The arrow keys control the angle of the camera, which is what's causing the jitter.
 </div>
 
 ---
