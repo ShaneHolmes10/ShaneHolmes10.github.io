@@ -3,8 +3,6 @@
 *.mov
 *.HEIC
 *.heic
-*.mp4
-*.MP4
 
 _site
 .bundle
