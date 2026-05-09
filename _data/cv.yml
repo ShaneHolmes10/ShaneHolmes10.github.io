@@ -1,10 +1,10 @@
 cv:
   name: Shane Holmes
   label: Computer Engineer
-  email: shaneholmes2010+jobs@gmail.com
+  email: shaneholmes2010@gmail.com
   location: Boston, MA
   image: ""
-  summary: Computer Engineer with experience in embedded systems, robotics, and software development. Passionate about building things from first principles — from low-level embedded firmware to machine learning models and 3D rendering engines.
+  summary: Computer Engineer with experience in embedded systems, robotics, and software development. Passionate about working on novel challenges in an interdisciplinary environment.
 
   social_networks:
     - network: LinkedIn
@@ -20,8 +20,6 @@ cv:
         studyType: Master of Science
         start_date: 2024
         end_date: 2026
-        highlights:
-          - Expected graduation May 2026
 
       - institution: Florida Polytechnic University
         location: Lakeland, FL
@@ -34,10 +32,12 @@ cv:
 
       - institution: University of Toronto
         location: Toronto, ON
-        area: Academic Exchange with Fulbright
+        area: Computer Science
         studyType: Exchange Student
         start_date: 2022-09
         end_date: 2023-01
+        highlights: 
+          - Academic Exchange with Fulbright
 
     Experience:
       - company: Overhead Intelligence
@@ -47,9 +47,9 @@ cv:
         end_date: 2024-05
         highlights:
           - Worked on the electrical and computer systems of a battery-powered UAV
-          - Designed and implemented LiDAR-based computation and map synthesis, capable of mapping 1.2 km² in 20 minutes
+          - Designed and implemented LiDAR-based mapping
           - Collaborated with a multidisciplinary team of engineers and participated in in-field deployment
-          - "Technologies: Raspberry Pi, C++/C, Python"
+          - "Technologies: Odroid, STM32, Raspberry Pi, C++/C, Python"
 
       - company: SS Innovations (Formerly AVRA Medical Robotics)
         position: Computer / Robotics / Software Engineer
@@ -59,7 +59,7 @@ cv:
         highlights:
           - Worked on the computer vision sensor system for a surgical robot arm to identify facial landmarks
           - Achieved accurate simulation test results for surgical motion and object identification
-          - "Technologies: Python, OpenCV, Git"
+          - "Technologies: Python, OpenCV, Robot arm"
 
       - company: Advanced Mobility Institute
         position: Research Assistant / Robotics & Software Engineer
@@ -68,20 +68,49 @@ cv:
         end_date: 2022-01
         highlights:
           - Developed a fleet of small robot vehicles to autonomously navigate and coordinate in an environment
-          - Built electrical motor interface systems and an ArUco sensor system to identify vehicles
+          - Built electrical motor systems and an ArUco sensor system to identify vehicles
           - Achieved vehicle convoy movement and dynamic obstacle avoidance of objects greater than 3 inches consistently
-          - "Technologies: Python, C++/C, OpenCV"
+          - "Technologies: Python, C++/C, OpenCV, Electronics"
+
+    Skills:
+      - name: Programming Languages
+        icon: fa-solid fa-code
+        keywords: "Python, C++, C, Java"
+
+      - name: Python Libraries
+        icon: fa-brands fa-python
+        keywords: "NumPy, Pandas, Matplotlib, OpenCV, Threading, PyTorch, TensorFlow, Keras, Scikit-learn"
+
+      - name: Embedded & Hardware
+        icon: fa-solid fa-microchip
+        keywords: "Raspberry Pi, Arduino, ESP32, STM32, Odroid, AVR, Linux, Embedded Linux"
+
+      - name: Robotics & Autonomy
+        icon: fa-solid fa-robot
+        keywords: "Computer Vision, LiDAR, IMU, SLAM, GPS, UAV"
+
+      - name: Software Development
+        icon: fa-solid fa-laptop-code
+        keywords: "Git, OOP, Software Design, Software Testing, Software Documentation, Embedded Systems"
+
+      - name: Technical Areas
+        icon: fa-solid fa-brain
+        keywords: "Machine Learning, Artificial Intelligence, Computer Vision, Digital Signal Processing, Robotics, Hardware, Software"
+
+      - name: Collaborative Tools
+        icon: fa-solid fa-users
+        keywords: "Jira, Confluence, Slack, Microsoft Teams, Zoom, Visual Studio"
 
     Projects:
       - name: Mock Rover — FSI Capstone Project
         url: /projects/fsi_rover/
         start_date: 2022-09
         end_date: 2023-05
-        summary: Reverse-engineered and rebuilt a non-functional mock rover for the NASA Space Grant Consortium program through Florida Space Institute.
+        summary: built a mock rover for the NASA Space Grant Consortium program through Florida Space Institute.
         highlights:
           - Led technical integration of embedded control systems designing a Raspberry Pi-based architecture coordinating four AC motors, stereoscopic camera feed, and wireless command interface
           - Achieved ~100ft wireless range, 300lb payload capacity, and 5mph traverse speed
-          - "Technologies: Python, C++, Raspberry Pi, Arduino Uno, motor control systems, stereoscopic cameras, 3D printing"
+          - "Technologies: Python, C++, Raspberry Pi, Arduino Uno, motor control systems, OpenCV, 3D printing"
 
       - name: Hand Robot — Commissioned Project
         url: /projects/hand_robot/
@@ -97,7 +126,7 @@ cv:
       - name: 3D CPU Software Rasterizer
         url: /projects/3d_renderer/
         start_date: 2025-12
-        summary: Built a 3D software rendering engine from first principles in C++ with no GPU acceleration or rendering libraries.
+        summary: Built a 3D software rendering engine from first principles in C++ for CPU.
         highlights:
           - Full graphics pipeline — model space through screen space — implemented manually using 4x4 matrices
           - Triangle rasterization using edge functions and barycentric coordinates
@@ -111,16 +140,16 @@ cv:
         highlights:
           - Trained a convolutional decoder on ~202k face images with PCA post-processing to surface principal axes of variation
           - Exported model to ONNX and built a pure-JavaScript browser interface running inference with no backend
-          - "Technologies: PyTorch, ONNX Runtime Web, scikit-learn, HDF5, Vanilla JS"
+          - "Technologies: PyTorch, ONNX Runtime Web, scikit-learn, HDF5"
 
       - name: Motor Babbling — RL for Inverse Kinematics
         url: /projects/motor_babbling/
         start_date: 2025-01
         end_date: 2025-04
-        summary: Implemented DQN, DDPG, and SAC from scratch to teach a simulated planar robot arm to reach arbitrary targets in MuJoCo — no analytical IK solver.
+        summary: Implemented DQN, DDPG, and SAC to teach a simulated planar robot arm to reach arbitrary targets in MuJoCo.
         highlights:
-          - Compared value-based (DQN), deterministic actor-critic (DDPG), and stochastic actor-critic (SAC) against the same environment; SAC achieved ~80% success at 10cm threshold on 2-DOF random targets
-          - Built the MuJoCo environment from scratch with a configurable number of links and a shared BaseAgent interface for clean algorithm comparison
+          - Compared value-based (DQN), deterministic actor-critic (DDPG), and stochastic actor-critic (SAC) against the same environment; SAC achieved ~80% success
+          - Built the MuJoCo environment with a configurable number of links and a shared BaseAgent interface for clean algorithm comparison
           - "Technologies: Python, PyTorch, MuJoCo, Gymnasium, NumPy, Matplotlib"
 
     Relevant Coursework:
