@@ -160,6 +160,8 @@ def translate_to_rendercv(source: dict) -> dict:
         out_cv["email"] = src_cv["email"]
     if src_cv.get("label"):
         out_cv["headline"] = src_cv["label"]
+    if src_cv.get("website"):
+        out_cv["website"] = src_cv["website"]
     if src_cv.get("social_networks"):
         out_cv["social_networks"] = list(src_cv["social_networks"])
 
@@ -182,6 +184,7 @@ def translate_to_rendercv(source: dict) -> dict:
         "design": source.get("design") or {
             "theme": "engineeringresumes",
             "page": {"size": "us-letter", "show_footer": False},
+            "header": {"connections": {"show_icons": True}},
         },
         "locale": source.get("locale") or {"language": "english"},
     }
@@ -190,6 +193,39 @@ def translate_to_rendercv(source: dict) -> dict:
 # ---------------------------------------------------------------------------
 # RenderCV invocation + auto-fit search
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Custom Typst header template
+#
+# Placed at {work_dir}/engineeringresumes/Header.j2.typ before each render so
+# RenderCV picks it up instead of the built-in one.  Changes vs. the default:
+#   1. Location is rendered on its own line via a second #headline() call.
+#   2. Location is filtered OUT of the #connections() row (identified by the
+#      FontAwesome icon name "location-dot" that appears when show_icons=true).
+# ---------------------------------------------------------------------------
+
+CUSTOM_HEADER_TEMPLATE = """\
+{% if cv.name %}
+= {{ cv.name }}
+{% endif %}
+
+{% if cv.headline %}
+#headline([{{ cv.headline }}])
+
+{% endif %}
+{% if cv.location %}
+#headline([{{ cv.location }}])
+
+{% endif %}
+#connections(
+{% for connection in cv._connections %}
+{% if "location-dot" not in connection %}
+  [{{ connection }}],
+{% endif %}
+{% endfor %}
+)
+"""
+
 
 PRESETS = [
     {  # 0: roomy
@@ -308,6 +344,12 @@ def count_pdf_pages(pdf_path: Path) -> int:
 
 def render_with_preset(translated_yaml_path: Path, work_dir: Path, preset: dict) -> Path:
     work_dir.mkdir(parents=True, exist_ok=True)
+
+    # Write custom header template so location appears on its own line.
+    theme_dir = work_dir / "engineeringresumes"
+    theme_dir.mkdir(exist_ok=True)
+    (theme_dir / "Header.j2.typ").write_text(CUSTOM_HEADER_TEMPLATE, encoding="utf-8")
+
     pdf_out = work_dir / "cv.pdf"
     if pdf_out.exists():
         pdf_out.unlink()
