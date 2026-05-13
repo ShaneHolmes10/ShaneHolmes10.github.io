@@ -1,11 +1,12 @@
 cv:
   name: Shane Holmes
   label: Computer Engineer
-  email: shaneholmes2010@gmail.com
   location: Boston, MA
+  email: shaneholmes2010@gmail.com
   image: ""
-  summary: Computer Engineer with experience in embedded systems, robotics, and software development. Passionate about working on novel challenges in an interdisciplinary environment.
+  summary: Computer Engineer with experience in embedded systems, robotics, and software development. Passionate about working on novel challenges in an interdisciplinary environment. Affiliations with the Fulbright Killam Fellowship and IEEE HKN.
 
+  website: https://shaneholmes10.github.io
   social_networks:
     - network: LinkedIn
       username: shaneholmes2010
