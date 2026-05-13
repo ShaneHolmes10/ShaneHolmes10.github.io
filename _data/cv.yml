@@ -145,8 +145,8 @@ cv:
 
       - name: Motor Babbling — RL for Inverse Kinematics
         url: /projects/motor_babbling/
-        start_date: 2025-01
-        end_date: 2025-04
+        start_date: 2026-02
+        end_date: 2026-04
         summary: Implemented DQN, DDPG, and SAC to teach a simulated planar robot arm to reach arbitrary targets in MuJoCo.
         highlights:
           - Compared value-based (DQN), deterministic actor-critic (DDPG), and stochastic actor-critic (SAC) against the same environment; SAC achieved ~80% success

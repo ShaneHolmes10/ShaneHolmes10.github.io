@@ -9,7 +9,7 @@ category: work
 
 ## Overview
 
-A project to design and fabricate a fully articulated robotic hand with individual finger control and an accompanying arm. I owned the entire development pipeline — from mechanical design through embedded systems to the final software control interface. Originally this was a personal project I had started in highschool, but later I found someone who wanted to buy it. 
+A project to design and fabricate a fully articulated robotic hand with individual finger control and an accompanying arm. I owned the entire development pipeline — from mechanical design through embedded systems to the final software control interface. Originally this was a personal project I had started in highschool, but later I found someone who wanted to purchase it. 
 
 ---
 
@@ -27,9 +27,7 @@ A project to design and fabricate a fully articulated robotic hand with individu
 
 ## The Challenge
 
-To begin with the 
-
-Building a robotic hand that feels natural to control means solving problems at every layer of the stack simultaneously — the mechanical structure has to allow the right range of motion, the servo circuits have to be precise enough to act on it, and the control interface has to make all of it accessible in real time. Every layer is a dependency of the one above it.
+The core challenge was mechanical: getting the fingers to articulate properly required a lot of trial and error. The geometry of each joint, the tendon routing, the range of motion — none of it was obvious up front, and the only way to test an idea was to model it, print it, and find out what was wrong with it.
 
 ---
 
@@ -39,7 +37,7 @@ I designed and fabricated the hand and arm from the ground up:
 
 - Iteratively modeled the mechanical structure in **CAD** with fully custom 3D printed components
 - Engineered **servo control circuits** on an Arduino platform for individual finger articulation
-- Developed a **desktop application in C++** for real-time control of the hand
+- Developed a **desktop application in Python** for real-time control of the hand
 
 The hand went through two distinct design generations, and the shift between them was the most important engineering decision of the project.
 

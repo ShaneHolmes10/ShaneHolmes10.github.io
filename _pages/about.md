@@ -28,7 +28,7 @@ latest_posts:
 
 
 
-Hi, I'm Shane I'm an engineer with a bachelors in Computer Engineering and a masters in Computer Science. I have a very wide breadth of interests mainly electrical, computer, mechanical, robotic, and software. 
+Hi, I'm Shane I'm an engineer with a bachelors in Computer Engineering and a masters in Computer Science. I have a very wide breadth of interests mainly electrical, computer, robotic, and software. 
 
 My work spans a range of disciplines: I've developed LiDAR mapping systems, built autonomous robot fleets, and taken on commissioned hardware projects like a fully articulated robotic hand. I was a Fulbright Canada Killam Fellow, which took me to the University of Toronto for an academic exchange focused on expanding that range further.
 
