@@ -28,8 +28,8 @@ latest_posts:
 
 
 
-Hi, I'm Shane I'm an engineer with a bachelors in Computer Engineering and a masters in Computer Science. I have a very wide breadth of interests mainly electrical, computer, robotic, and software. 
+My name is Shane Holmes, I'm an engineer with a Bachelor's in Computer Engineering and a Master's in Computer Science. I have a wide range of interests in the fields of electrical, computer, and software engineering. 
 
-My work spans a range of disciplines: I've developed LiDAR mapping systems, built autonomous robot fleets, and taken on commissioned hardware projects like a fully articulated robotic hand. I was a Fulbright Canada Killam Fellow, which took me to the University of Toronto for an academic exchange focused on expanding that range further.
+My work spans a range of disciplines; I've developed a LiDAR mapping system, built CV localization for a surgical robot, and taken on a plethora of hardware projects including a fully articulated robotic hand. I was a Fulbright Canada Killam Fellow, which took me to the University of Toronto for an academic exchange focused on furthering my education and experiencing Canadian culture.
 
-I tend to gravitate toward problems that are interdisciplinary mainly because I enjoy working on novel problems. This gives me the opportunity to learn new things and I find such challenged entertaining.
+I tend to gravitate more toward interdisciplinary problems because I enjoy working on novel challenges. These challenges give me the opportunity to learn new concepts. 
