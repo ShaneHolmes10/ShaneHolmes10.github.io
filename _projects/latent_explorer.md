@@ -76,7 +76,7 @@ In future iterations of this project, I want to either normalize the images to e
 
 ## Takeaways
 
-Training the model is the easy part. The more interesting problem is making the learned representation legible. Raw latent coordinates are numerically arbitrary — PCA reorders them by variance, which turns an opaque 80-dimensional space into something you can actually explore systematically. Exporting to ONNX and running inference in the browser removes the last barrier: anyone can interact with the model directly without needing Python or a GPU.
+While training the model is relatively straightforward, the more substantive challenge is making the learned representation legible. Raw latent coordinates are numerically arbitrary — PCA reorders them by variance, which turns an opaque 80-dimensional space into something you can actually explore systematically. Exporting to ONNX and running inference in the browser removes the last barrier: anyone can interact with the model directly without needing Python or a GPU.
 
 ---
 
