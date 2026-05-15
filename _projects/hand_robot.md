@@ -9,7 +9,7 @@ category: work
 
 ## Overview
 
-A project to design and fabricate a fully articulated robotic hand with individual finger control and an accompanying arm. I owned the entire development pipeline — from mechanical design through embedded systems to the final software control interface. Originally this was a personal project I had started in highschool, but later I found someone who wanted to purchase it. 
+A project to design and fabricate a fully articulated robotic hand with individual finger control and an accompanying arm. I owned the entire development pipeline — from mechanical design through embedded systems to the final software control interface. Originally this was a personal project I had started in high school, but later I found someone who wanted to purchase it. 
 
 ---
 
@@ -232,7 +232,7 @@ For the second generation I broke the palm into a discrete component that mounte
 
 Because the fingers and wrist mount were now standardized interfaces, I could swap palm components in and out without touching the rest of the assembly. A new palm variant could be implemented in a fraction of the time of a full hand and could be tested against the existing fingers immediately. 
 
-The modular approach changed what kinds of problems were tractable. Instead of having to reprint the entire hand every time I wanted to make a small change I would just print the small change and swap out the part. 
+The modular approach changed what kinds of problems were tractable. Instead of having to reprint the entire hand every time I wanted to make a small change, I would just print the small change and swap out the part. 
 
 
 ---
