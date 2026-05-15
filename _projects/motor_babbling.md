@@ -53,7 +53,7 @@ I started with a Deep Q-Network (**DQN**), which failed to learn the full 2-DOF 
  
 That pushed me to try Deep Deterministic Policy Gradient (**DDPG**), which works directly on continuous action spaces. DDPG learned faster than DQN on the simple 1-DOF task, but training was wildly unstable. Two runs with the same hyperparameters would diverge from each other, the reward curve swung erratically, and on formal evaluation it scored 0% because the result depended entirely on which episode training happened to end on. The algorithm worked in some sense but was not reliable enough to build on.
  
-Finally I moved to Soft Actor Critic (**SAC**), which addresses DDPG's stability issues through a stochastic policy, twin critics, and automatic entropy tuning. SAC trained stably on the 1-DOF task, so I scaled the problem back up step by step, carrying the trained checkpoint forward each time: 1-DOF fixed → 1-DOF random targets → 2-DOF random targets. On the full target task it hit roughly 80% success. The policy reliably gets the end effector into the right region of the workspace, even if it does not always have the precision to settle within a tighter radius to the target.
+Finally, I moved to Soft Actor Critic (**SAC**), which addresses DDPG's stability issues through a stochastic policy, twin critics, and automatic entropy tuning. SAC trained stably on the 1-DOF task, so I scaled the problem back up step by step, carrying the trained checkpoint forward each time: 1-DOF fixed → 1-DOF random targets → 2-DOF random targets. On the full target task it hit roughly 80% success. The policy reliably gets the end effector into the right region of the workspace, even if it does not always have the precision to settle within a tighter radius to the target.
  
 The final results across the three algorithms:
 - **DQN**: 100% success on 1-DOF fixed target, 0% success on 2-DOF
@@ -77,7 +77,7 @@ The final results across the three algorithms:
 
 ## Takeaways
 
-The biggest thing I took from this project is that RL algorithms are actually pretty decent at learning this kind of kinematics. Even on a small arm, SAC was able to land the end effector in the right region of the workspace most of the time. That makes me curious to push the same setup further: more sophisticated algorithms, more complex robot forms (more joints, 3D motion, different morphologies entirely), and tasks beyond static reaching.
+The primary takeaway from this project is that modern RL algorithms are genuinely capable of learning this class of kinematics problems from raw interaction alone. Even on a small arm, SAC was able to land the end effector in the right region of the workspace most of the time. That makes me curious to push the same setup further: more sophisticated algorithms, more complex robot forms (more joints, 3D motion, different morphologies entirely), and tasks beyond static reaching.
 
 ---
 
