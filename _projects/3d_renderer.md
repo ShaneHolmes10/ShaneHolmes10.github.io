@@ -76,7 +76,7 @@ The viewport runs on a separate thread using SFML for windowing, decoupling the 
 
 ## Takeaways
 
-Building a rasterizer from scratch forces you to confront every assumption that high-level graphics APIs make on your behalf — how coordinate spaces relate to each other, why barycentric coordinates work for interpolation, what a transformation matrix is actually doing. It's one of the most effective ways to build genuine intuition for 3D graphics rather than just knowing how to call the right functions. This was also a great exercise for me on structuring a C++ program, with testing, documentation, and management.
+Building a rasterizer from scratch forced me to confront every assumption that high-level graphics APIs normally hide — how coordinate spaces relate to each other, why barycentric coordinates work for interpolation, what a transformation matrix is actually doing. It gave me genuine intuition for 3D graphics rather than just knowing how to call the right functions. It was also a good exercise in structuring a C++ project with testing, documentation, and build management.
 
 ---
 
