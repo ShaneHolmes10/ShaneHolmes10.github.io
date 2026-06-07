@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   <a href='https://fulbright.ca/programs/killam-fellowships/'>Fulbright Killam Fellow</a> &nbsp;·&nbsp; <a href='https://hkn.ieee.org/'>IEEE Member (ΗΚΝ)</a> &nbsp;·&nbsp; Boston, MA

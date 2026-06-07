@@ -7,9 +7,7 @@ tags: graphics
 featured: true
 ---
 
-# Depth Buffer
-
-So there's this issue with the renderer where it can't really handle multiple objects and non-convex shapes. Below you can see two rainbow icosahedrons to the left along with a diagram representing an overhead view of where the camera is relative to them to the right.
+So there's this issue with the [renderer](/projects/3d_renderer/) where it can't really handle multiple objects and non-convex shapes. Below you can see two rainbow icosahedrons to the left along with a diagram representing an overhead view of where the camera is relative to them to the right.
 
 <div class="row justify-content-center mt-3">
     <div class="col-sm-3 mt-3 mt-md-0">
