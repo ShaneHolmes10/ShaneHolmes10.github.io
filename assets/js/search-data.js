@@ -4,13 +4,13 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-projects",
-          title: "projects",
+          title: "Projects",
           description: "This is a collection of some interesting work that I&#39;ve done.",
           section: "Navigation",
           handler: () => {
@@ -23,11 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-hyper-fixating-on-3d-graphics",
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "post-depth-buffer",
         
-          title: "Hyper-fixating on 3D graphics",
+          title: "Depth Buffer",
         
-        description: "The high level overview of how I got sucked into this 3D rendering rabbit hole.",
+        description: "Discussion about the inclusion of a depth buffer in my 3D rendering program.",
         section: "Posts",
         handler: () => {
           
