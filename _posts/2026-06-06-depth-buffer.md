@@ -9,7 +9,7 @@ featured: true
 
 So there's this issue with the [renderer](/projects/3d_renderer/) where it can't really handle multiple objects and non-convex shapes. Below you can see two rainbow icosahedrons to the left along with a diagram representing an overhead view of where the camera is relative to them to the right.
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-3 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260605170110.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -22,7 +22,7 @@ So there's this issue with the [renderer](/projects/3d_renderer/) where it can't
     </div>
 </div>
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-3 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260605171231.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -36,7 +36,7 @@ So there's this issue with the [renderer](/projects/3d_renderer/) where it can't
 </div>
 
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-3 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260605171445.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -55,13 +55,13 @@ The way this works is you have two meshes that contain a bunch of triangle and v
 
 During the triangle vertex projection we take the 3D vertices and we make them 2D. During this phase we essentially divide the x and y components of the 3D point by its z component to get screen coordinates. Normally z gets discarded at this point, but we want to keep it as a per-vertex attribute and pass it along to the rasterization phase. Note that this is the camera-space z (after the view transform), not model-space or world-space z. Model-space z is meaningless for depth since the model could be oriented anywhere.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-center mt-3 mb-3">
+    <div class="col-sm-5 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606120558.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
         </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-5 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606120716.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
         </div>
@@ -72,7 +72,7 @@ In the image above we can see that the vertices (a, b, c) of the <span style="co
 
 During rasterization we would use these recorded depth values and perform barycentric interpolation to get all the intermediate depth values for the triangle. One problem with this is that linearly interpolating z across screen pixels doesn't give the correct 3D depth at each pixel. This is because perspective projection compresses 3D space non-uniformly. Equal steps across the screen don't correspond to equal steps across the 3D triangle.
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-10 mt-3 mt-md-0">
         <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606134303.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="">
     </div>
@@ -90,7 +90,7 @@ When the rasterizer walks across the projected triangle one pixel at a time, at 
 
 But the diagram just showed that equal screen steps don't correspond to equal 3D steps. So when the rasterizer is at the screen space midpoint for the geometry it says "we're halfway across, so depth must be halfway between A and B," it's wrong. The screen midpoint actually corresponds to a 3D point much closer to the camera than the 3D midpoint as seen below.
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-10 mt-3 mt-md-0">
         <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606134357.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="">
     </div>
@@ -100,8 +100,8 @@ To fix this we would interpolate across screen space using 1/z, instead of z.
 
 Before any rasterization starts, we allocate a depth buffer to have the same dimension as the frame buffer and initialize every element to be zero (representing 1/infinity, since we'll be storing 1/z values).
 
-<div class="row justify-content-center mt-3">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row justify-content-center mt-3 mb-3">
+    <div class="col-sm-5 mt-3 mt-md-0">
         <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606121958.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="">
     </div>
 </div>
@@ -115,8 +115,8 @@ When we start to render a triangle we will iterate pixel by pixel within its bou
 6. Write respective values to both buffers
 7. Repeat for each pixel
 
-<div class="row justify-content-center mt-3">
-    <div class="col-sm-10 mt-3 mt-md-0">
+<div class="row justify-content-center mt-3 mb-3">
+    <div class="col-sm-5 mt-3 mt-md-0">
         <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606123953.png' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Shade of blue represents depth">
     </div>
 </div>
@@ -128,7 +128,7 @@ When we start to render a triangle we will iterate pixel by pixel within its bou
 
 So I've just implemented this and this is the result...
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-3 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606163202.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -141,7 +141,7 @@ So I've just implemented this and this is the result...
     </div>
 </div>
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-3 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606163130.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -154,7 +154,7 @@ So I've just implemented this and this is the result...
     </div>
 </div>
 
-<div class="row justify-content-center mt-3">
+<div class="row justify-content-center mt-3 mb-3">
     <div class="col-sm-3 mt-3 mt-md-0">
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606163252.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -171,8 +171,8 @@ IT WORKS LOOK AT HOW BEAUTIFUL IT IS!!!
 
 Ok now I want to go build a non-convex shape and put that into the renderer.
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-center mt-3 mb-3">
+    <div class="col-sm-3 mt-3 mt-md-0">
         <p class="text-center"><strong>Before Depth Buffer</strong></p>
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem; margin-bottom: 1rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606182335.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
@@ -184,7 +184,7 @@ Ok now I want to go build a non-convex shape and put that into the renderer.
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606182507.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
         </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-3 mt-3 mt-md-0">
         <p class="text-center"><strong>After Depth Buffer</strong></p>
         <div style="aspect-ratio: 4/3; overflow: hidden; border-radius: 0.5rem; margin-bottom: 1rem;">
             <img src="{{ '/assets/img/depth_buffer_blog_post/Pasted image 20260606191327.png' | relative_url }}" class="z-depth-1" style="width: 100%; height: 100%; object-fit: cover;" alt="">
