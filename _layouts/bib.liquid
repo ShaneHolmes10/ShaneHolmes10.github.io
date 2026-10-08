@@ -186,6 +186,11 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.blurb %}
+      <div class="periodical">
+        {{ entry.blurb | strip }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
