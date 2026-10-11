@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "This page highlights my published research in robotics and estimation theory.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Below is my CV with an outline of my experiences.",
