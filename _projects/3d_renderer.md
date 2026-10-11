@@ -63,14 +63,14 @@ The viewport runs on a separate thread using SFML for windowing, decoupling the 
 
 ## Technical Stack
 
-| Component | Technology |
-|---|---|
-| Language | C++ |
-| Build system | CMake |
-| Linear algebra | Eigen |
-| Windowing / display | SFML  |
-| Unit testing | CppUnitLite |
-| Platform | Linux |
+| Component           | Technology  |
+| ------------------- | ----------- |
+| Language            | C++         |
+| Build system        | CMake       |
+| Linear algebra      | Eigen       |
+| Windowing / display | SFML        |
+| Unit testing        | CppUnitLite |
+| Platform            | Linux       |
 
 ---
 
@@ -80,4 +80,4 @@ Building a rasterizer from scratch forced me to confront every assumption that h
 
 ---
 
-*Dec 2025 – Present · Personal Project*
+_Dec 2025 – Present · Personal Project_

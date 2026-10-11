@@ -9,7 +9,7 @@ category: work
 
 ## Overview
 
-A project to design and fabricate a fully articulated robotic hand with individual finger control and an accompanying arm. I owned the entire development pipeline — from mechanical design through embedded systems to the final software control interface. Originally this was a personal project I had started in high school, but later I found someone who wanted to purchase it. 
+A project to design and fabricate a fully articulated robotic hand with individual finger control and an accompanying arm. I owned the entire development pipeline — from mechanical design through embedded systems to the final software control interface. Originally this was a personal project I had started in high school, but later I found someone who wanted to purchase it.
 
 ---
 
@@ -125,6 +125,7 @@ I started by designing the entire palm and finger assembly as a single CAD model
         </div>
         <p class="text-center mt-2 mb-0"><small><strong>V5</strong></small></p>
     </div>
+
 </div>
 
 <div class="row mt-3">
@@ -193,6 +194,7 @@ I started by designing the entire palm and finger assembly as a single CAD model
     </div>
 
     <div class="col-6 col-md-auto mb-4" style="flex: 0 0 20%; max-width: 20%;"></div>
+
 </div>
 
 This worked, but it was slow. Small changes to one feature forced rework on every other feature. The design space I could explore was bounded by the time I was willing to spend on each guess.
@@ -228,23 +230,23 @@ For the second generation I broke the palm into a discrete component that mounte
         </div>
         <p class="text-center mt-2 mb-0"><small><strong>V3</strong></small></p>
     </div>
+
 </div>
 
-Because the fingers and wrist mount were now standardized interfaces, I could swap palm components in and out without touching the rest of the assembly. A new palm variant could be implemented in a fraction of the time of a full hand and could be tested against the existing fingers immediately. 
+Because the fingers and wrist mount were now standardized interfaces, I could swap palm components in and out without touching the rest of the assembly. A new palm variant could be implemented in a fraction of the time of a full hand and could be tested against the existing fingers immediately.
 
-The modular approach changed what kinds of problems were tractable. Instead of having to reprint the entire hand every time I wanted to make a small change, I would just print the small change and swap out the part. 
-
+The modular approach changed what kinds of problems were tractable. Instead of having to reprint the entire hand every time I wanted to make a small change, I would just print the small change and swap out the part.
 
 ---
 
 ## Technical Stack
 
-| Layer | Technology |
-|---|---|
+| Layer             | Technology                 |
+| ----------------- | -------------------------- |
 | Mechanical design | CAD, 3D printing, Sketchup |
-| Low-level | Arduino, circuits |
-| Actuation | Servo control systems |
-| Software | C++ |
+| Low-level         | Arduino, circuits          |
+| Actuation         | Servo control systems      |
+| Software          | C++                        |
 
 ---
 
@@ -254,7 +256,6 @@ The biggest engineering lesson came from the shift between the monolithic and mo
 
 This project was also a good exercise in full stack robotics development. Owning the mechanical design, the servo circuits, and the control software end to end gave me a working sense of how decisions in one layer ripple into constraints in the next.
 
-
 ---
 
-*Nov 2020 – Feb 2021 · Commissioned Project*
+_Nov 2020 – Feb 2021 · Commissioned Project_
