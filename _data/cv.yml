@@ -41,8 +41,18 @@ cv:
           - Academic Exchange with Fulbright
 
     Experience:
+      - company: Markforged
+        position: Software Engineer
+        location: Waltham, MA
+        start_date: 2026-05
+        highlights:
+          - Work on middleware connecting low-level embedded systems to front-end applications for 3D printers
+          - working on several projects including Material extrusion issue recovery, and rail grease facilitation
+          - Resolve tickets for proposed printer feature improvements, conduct code reviews, and handle customer escalations
+          - "Technologies: TypeScript, 3D Printing, Git"
+
       - company: Overhead Intelligence
-        position: Computer / Robotics / Embedded Engineer
+        position: Computer Engineer
         location: Lake Wales, FL
         start_date: 2023-10
         end_date: 2024-05
@@ -53,7 +63,7 @@ cv:
           - "Technologies: Odroid, STM32, Raspberry Pi, C++/C, Python"
 
       - company: SS Innovations (AVRA Medical Robotics)
-        position: Computer / Robotics / Software Engineer
+        position: Computer Engineer
         location: Orlando, FL
         start_date: 2022-05
         end_date: 2022-09
@@ -63,7 +73,7 @@ cv:
           - "Technologies: Python, OpenCV, Robot arm"
 
       - company: Advanced Mobility Institute
-        position: Research Assistant / Robotics & Software Engineer
+        position: Research Assistant
         location: Lake Wales, FL
         start_date: 2021-01
         end_date: 2022-01
@@ -72,6 +82,13 @@ cv:
           - Built electrical motor systems and an ArUco sensor system to identify vehicles
           - Achieved vehicle convoy movement and dynamic obstacle avoidance of objects greater than 3 inches consistently
           - "Technologies: Python, C++/C, OpenCV, Electronics"
+
+    Publications:
+      - title: "FAST-Sync: Fast Group Synchronization for Any Matrix Lie Group"
+        publisher: IEEE Robotics and Automation Letters
+        date: 2026-09
+        url: https://doi.org/10.1109/LRA.2026.3710327
+        summary: "Co-authored with Yiran Luo, Firat Taxpulat, David M. Rosen, and Frank Dellaert. Completed in collaboration between **Northeastern University** and **Georgia Tech**."
 
     Skills:
       - name: Programming Languages
@@ -191,35 +208,6 @@ cv:
       - title: Florida Polytechnic University Institutional Scholarship
         date: 2019
         awarder: Florida Polytechnic University
-
-    Skills:
-      - name: Programming Languages
-        icon: fa-solid fa-code
-        keywords: "Python, C++, C, Java"
-
-      - name: Python Libraries
-        icon: fa-brands fa-python
-        keywords: "NumPy, Pandas, Matplotlib, OpenCV, Threading, PyTorch, TensorFlow, Keras, Scikit-learn"
-
-      - name: Embedded & Hardware
-        icon: fa-solid fa-microchip
-        keywords: "Raspberry Pi, Arduino, ESP32, STM32, Odroid, AVR, Linux, Embedded Linux"
-
-      - name: Robotics & Autonomy
-        icon: fa-solid fa-robot
-        keywords: "Computer Vision, LiDAR, IMU, SLAM, GPS, UAV"
-
-      - name: Software Development
-        icon: fa-solid fa-laptop-code
-        keywords: "Git, OOP, Software Design, Software Testing, Software Documentation, Embedded Systems"
-
-      - name: Technical Areas
-        icon: fa-solid fa-brain
-        keywords: "Machine Learning, Artificial Intelligence, Computer Vision, Digital Signal Processing, Robotics, Hardware, Software"
-
-      - name: Collaborative Tools
-        icon: fa-solid fa-users
-        keywords: "Jira, Confluence, Slack, Microsoft Teams, Zoom, Visual Studio"
 
     Languages:
       - name: English
