@@ -47,7 +47,7 @@ cv:
         start_date: 2026-05
         highlights:
           - Work on middleware connecting low-level embedded systems to front-end applications for 3D printers
-          - working on several projects including Material extrusion issue recovery, and rail grease facilitation
+          - Working on several projects including Material extrusion issue recovery, and rail grease facilitation
           - Resolve tickets for proposed printer feature improvements, conduct code reviews, and handle customer escalations
           - "Technologies: TypeScript, 3D Printing, Git"
 
@@ -85,10 +85,16 @@ cv:
 
     Publications:
       - title: "FAST-Sync: Fast Group Synchronization for Any Matrix Lie Group"
+        authors:
+          - "**Shane Holmes**"
+          - Yiran Luo
+          - Firat Taxpulat
+          - David M. Rosen
+          - Frank Dellaert
         publisher: IEEE Robotics and Automation Letters
+        doi: "10.1109/LRA.2026.3710327"
         date: 2026-09
-        url: https://doi.org/10.1109/LRA.2026.3710327
-        summary: "Co-authored with Yiran Luo, Firat Taxpulat, David M. Rosen, and Frank Dellaert. Completed in collaboration between **Northeastern University** and **Georgia Tech**."
+        summary: "Completed in collaboration between **Northeastern University** and **Georgia Tech**."
 
     Skills:
       - name: Programming Languages
@@ -172,7 +178,7 @@ cv:
 
     Relevant Coursework:
       - label: Mathematics
-        details: Probability and Statistics, Differential Equations, Linear Algebra, Discrete Mathematics, Analytical Geometry and Calculus (1, 2, 3)
+        details: Probability and Statistics, Differential Equations, Linear Algebra, Discrete Mathematics, Analytical Geometry and Calculus (1, 2, 3), Riemannian optimization
       - label: Computer Engineering
         details: Physics (1, 2), Computer Architecture and Organization, Microcomputers, Digital Logic Design, Circuits (1, 2), Digital Electronics, Computer Systems
       - label: Software Engineering
@@ -208,7 +214,3 @@ cv:
       - title: Florida Polytechnic University Institutional Scholarship
         date: 2019
         awarder: Florida Polytechnic University
-
-    Languages:
-      - name: English
-        summary: Native speaker

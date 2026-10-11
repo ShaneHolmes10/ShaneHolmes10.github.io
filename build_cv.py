@@ -136,6 +136,28 @@ def _convert_award_entry(item: dict) -> dict:
     return {"label": title, "details": " · ".join(parts)}
 
 
+def _convert_publication_entry(item: dict) -> dict:
+    out: dict = {}
+    if "title" in item:
+        out["title"] = item["title"]
+    if item.get("authors"):
+        out["authors"] = list(item["authors"])
+    if item.get("journal"):
+        out["journal"] = item["journal"]
+    elif item.get("publisher"):
+        out["journal"] = item["publisher"]
+    if item.get("doi"):
+        out["doi"] = item["doi"]
+    elif item.get("url"):
+        out["url"] = item["url"]
+    date = _format_date(item.get("date"))
+    if date is not None:
+        out["date"] = date
+    if item.get("summary"):
+        out["summary"] = item["summary"]
+    return out
+
+
 SECTION_CONVERTERS = {
     "education": _convert_education_entry,
     "experience": _convert_experience_entry,
@@ -145,6 +167,7 @@ SECTION_CONVERTERS = {
     "skills": _convert_one_line_entry,
     "languages": _convert_one_line_entry,
     "awards": _convert_award_entry,
+    "publications": _convert_publication_entry,
 }
 
 
@@ -185,6 +208,11 @@ def translate_to_rendercv(source: dict) -> dict:
             "theme": "engineeringresumes",
             "page": {"size": "us-letter", "show_footer": False},
             "header": {"connections": {"show_icons": True}},
+            "templates": {
+                "publication_entry": {
+                    "main_column": 'AUTHORS. "TITLE". In: *JOURNAL* (DATE). DOI\nSUMMARY',
+                },
+            },
         },
         "locale": source.get("locale") or {"language": "english"},
     }
